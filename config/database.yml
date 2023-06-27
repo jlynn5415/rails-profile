@@ -1,0 +1,29 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: <%= Rails.configuration.aurora_user %>
+  password: <%= Rails.configuration.aurora_password %>
+  host: <%= Rails.configuration.aurora_host %>
+  port: <%= Rails.configuration.aurora_port %>
+  database: 'profile_dev'
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: <%= Rails.configuration.aurora_user %>
+  password: <%= Rails.configuration.aurora_password %>
+  host: <%= Rails.configuration.aurora_host %>
+  database: 'profile_dev'
+  port: <%= Rails.configuration.aurora_port %>
+  
+production:
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: <%= Rails.configuration.aurora_user %>
+  password: <%= Rails.configuration.aurora_password %>
+  host: <%= Rails.configuration.aurora_host %>
+  port: <%= Rails.configuration.aurora_port %>
+  database: 'profile_dev'
